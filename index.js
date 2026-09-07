@@ -1487,7 +1487,7 @@ function initKindScrub() {
 
       tl.to(video, {
           scale: 1.2,
-          width: "108%",
+          width: "104%",
           ease: "none",
         }, 0)
         .to([heading, para], {
@@ -1512,7 +1512,7 @@ function initKindScrub() {
 
       tl.to(video, {
           scale: 1.1,
-          width: "105%",
+          width: "100%",
           ease: "none",
         }, 0)
         .to([heading, para], {
