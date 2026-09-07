@@ -1454,8 +1454,8 @@ function initKindScrub() {
       const tl = gsap.timeline({
         scrollTrigger: {
           trigger: track,
-          start: "top -24%",
-          end: "bottom bottom",
+          start: "top -12%",
+          end: "bottom center",
           scrub: 1,
         },
       });
@@ -1479,8 +1479,8 @@ function initKindScrub() {
       const tl = gsap.timeline({
         scrollTrigger: {
           trigger: track,
-          start: "top -24%",
-          end: "bottom bottom",
+          start: "top -12%",
+          end: "bottom center",
           scrub: 1,
         },
       });
@@ -1504,8 +1504,8 @@ function initKindScrub() {
       const tl = gsap.timeline({
         scrollTrigger: {
           trigger: track,
-          start: "top -24%",
-          end: "bottom bottom",
+          start: "top -12%",
+          end: "bottom center",
           scrub: 1,
         },
       });
