@@ -1454,7 +1454,7 @@ function initKindScrub() {
       const tl = gsap.timeline({
         scrollTrigger: {
           trigger: track,
-          start: "top -40%",
+          start: "top -24%",
           end: "bottom bottom",
           scrub: 1,
         },
@@ -1463,7 +1463,7 @@ function initKindScrub() {
       tl.to(video, {
           scale: 1.6,
           width: "112%",
-          ease: "power3.out",
+          ease: "none",
         }, 0)
         .to([heading, para], {
           filter: "blur(12px)",
@@ -1479,16 +1479,16 @@ function initKindScrub() {
       const tl = gsap.timeline({
         scrollTrigger: {
           trigger: track,
-          start: "top -40%",
+          start: "top -24%",
           end: "bottom bottom",
           scrub: 1,
         },
       });
 
       tl.to(video, {
-          scale: 1.4,
+          scale: 1.2,
           width: "108%",
-          ease: "power3.out",
+          ease: "none",
         }, 0)
         .to([heading, para], {
           filter: "blur(12px)",
@@ -1504,16 +1504,16 @@ function initKindScrub() {
       const tl = gsap.timeline({
         scrollTrigger: {
           trigger: track,
-          start: "top -40%",
+          start: "top -24%",
           end: "bottom bottom",
           scrub: 1,
         },
       });
 
       tl.to(video, {
-          scale: 1.2,
+          scale: 1.1,
           width: "105%",
-          ease: "power3.out",
+          ease: "none",
         }, 0)
         .to([heading, para], {
           filter: "blur(12px)",
