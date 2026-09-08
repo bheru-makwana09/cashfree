@@ -520,7 +520,7 @@ function goGlobalReveal() {
     );
 
     const contentItems = gsap.utils.toArray(
-      section.querySelectorAll("[go-global-title], [go-global-para]")
+      section.querySelectorAll("[go-global-title], [go-global-para], [go-global-cta]")
     );
 
     const revealTl = gsap.timeline({
