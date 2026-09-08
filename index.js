@@ -501,6 +501,7 @@ function collectReveal() {
 
 collectReveal();
 
+
 function goGlobalReveal() {
   gsap.registerPlugin(ScrollTrigger);
 
@@ -510,17 +511,23 @@ function goGlobalReveal() {
 
   sections.forEach((section) => {
     const heading = section.querySelector("[go-global-heading]");
-
     const blocks = gsap.utils.toArray(
       section.querySelectorAll("[go-global-item]")
     );
-
     const images = gsap.utils.toArray(
       section.querySelectorAll("[go-global-img] img")
     );
 
-    const contentItems = gsap.utils.toArray(
-      section.querySelectorAll("[go-global-title], [go-global-para], [go-global-cta]")
+    const titles = gsap.utils.toArray(
+      section.querySelectorAll("[go-global-title]")
+    );
+
+    const paragraphs = gsap.utils.toArray(
+      section.querySelectorAll("[go-global-para]")
+    );
+
+    const ctas = gsap.utils.toArray(
+      section.querySelectorAll("[go-global-cta]")
     );
 
     const revealTl = gsap.timeline({
@@ -533,6 +540,7 @@ function goGlobalReveal() {
       },
     });
 
+    // Heading
     if (heading) {
       revealTl.from(heading, {
         autoAlpha: 0,
@@ -549,9 +557,7 @@ function goGlobalReveal() {
           y: 44,
           scale: 0.985,
           duration: 0.9,
-          stagger: {
-            each: 0.14,
-          },
+          stagger: 0.14,
         },
         heading ? "-=0.68" : 0
       );
@@ -563,17 +569,15 @@ function goGlobalReveal() {
         {
           scale: 1.04,
           duration: 1.2,
-          stagger: {
-            each: 0.14,
-          },
+          stagger: 0.14,
         },
         "-=0.78"
       );
     }
 
-    if (contentItems.length) {
+    if (titles.length) {
       revealTl.from(
-        contentItems,
+        titles,
         {
           autoAlpha: 0,
           y: 20,
@@ -581,6 +585,32 @@ function goGlobalReveal() {
           stagger: 0.08,
         },
         "-=0.72"
+      );
+    }
+
+    if (paragraphs.length) {
+      revealTl.from(
+        paragraphs,
+        {
+          autoAlpha: 0,
+          y: 20,
+          duration: 0.65,
+          stagger: 0.08,
+        },
+        "-=0.55"
+      );
+    }
+
+    if (ctas.length) {
+      revealTl.from(
+        ctas,
+        {
+          autoAlpha: 0,
+          y: 20,
+          duration: 0.65,
+          stagger: 0.08,
+        },
+        "-=0.45"
       );
     }
   });
