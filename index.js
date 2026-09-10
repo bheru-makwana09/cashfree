@@ -584,7 +584,7 @@ function goGlobalReveal() {
           duration: 0.65,
           stagger: 0.08,
         },
-        "-=0.88"
+        "-=0.94"
       );
     }
 
@@ -1491,7 +1491,7 @@ function initKindScrub() {
       });
 
       tl.to(video, {
-          scale: 1.8,
+          scale: 1.6,
           width: "112%",
           ease: "none",
         }, 0)
@@ -1516,7 +1516,7 @@ function initKindScrub() {
       });
 
       tl.to(video, {
-          scale: 1.6,
+          scale: 1.4,
           width: "112%",
           ease: "none",
         }, 0)
@@ -1541,7 +1541,7 @@ function initKindScrub() {
       });
 
       tl.to(video, {
-          scale: 1.6,
+          scale: 1.4,
           width: "110%",
           ease: "none",
         }, 0)
