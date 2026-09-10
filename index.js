@@ -1486,12 +1486,13 @@ function initKindScrub() {
           trigger: track,
           start: "top -16%",
           end: "bottom bottom",
-          scrub: 1,
+          scrub: true,
         },
       });
 
       tl.to(video, {
-          scale: 2.4,
+          scale: 2,
+          width: "80%",
           ease: "none",
         }, 0)
         .to([heading, para], {
@@ -1515,7 +1516,8 @@ function initKindScrub() {
       });
 
       tl.to(video, {
-          scale: 1.9,
+          scale: 1.4,
+          width: "80%",
           ease: "none",
         }, 0)
         .to([heading, para], {
@@ -1539,7 +1541,8 @@ function initKindScrub() {
       });
 
       tl.to(video, {
-          scale: 1.6,
+          scale: 1.4,
+        width: "80%",
           ease: "none",
         }, 0)
         .to([heading, para], {
