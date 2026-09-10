@@ -584,7 +584,7 @@ function goGlobalReveal() {
           duration: 0.65,
           stagger: 0.08,
         },
-        "-=0.72"
+        "-=0.88"
       );
     }
 
@@ -610,7 +610,7 @@ function goGlobalReveal() {
           duration: 0.65,
           stagger: 0.08,
         },
-        "-=0.45"
+        "-=0.55"
       );
     }
   });
