@@ -1485,13 +1485,13 @@ function initKindScrub() {
         scrollTrigger: {
           trigger: track,
           start: "top -6%",
-          end: "bottom center",
+          end: "bottom bottom",
           scrub: 1,
         },
       });
 
       tl.to(video, {
-          scale: 1.6,
+          scale: 2,
           ease: "none",
         }, 0)
         .to([heading, para], {
@@ -1509,13 +1509,13 @@ function initKindScrub() {
         scrollTrigger: {
           trigger: track,
           start: "top -6%",
-          end: "bottom center",
+          end: "bottom bottom",
           scrub: 1,
         },
       });
 
       tl.to(video, {
-          scale: 1.2,
+          scale: 1.6,
           ease: "none",
         }, 0)
         .to([heading, para], {
@@ -1533,13 +1533,13 @@ function initKindScrub() {
         scrollTrigger: {
           trigger: track,
           start: "top -6%",
-          end: "bottom center",
+          end: "bottom bottom",
           scrub: 1,
         },
       });
 
       tl.to(video, {
-          scale: 1.1,
+          scale: 1.4,
           ease: "none",
         }, 0)
         .to([heading, para], {
